@@ -1,18 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Sahil Singh Rana</title>
-        <link rel="icon" type="image/icon" href="./images/sahillogo2.jpeg">
+        <title>
+            Sahil Singh
+        </title>
+        <style>
+            #top {
+                /* border: 1px solid black; */
+                height: 50px;
+                padding-bottom: 10px;
+                background-color: cadetblue;
+                margin-bottom: 20px;
+            }
+            #biodata {
+                background-image: url("./images/biodataicon.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                /* border: 1px solid black; */
+                margin-right: -1px;
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 25px;
+                padding-right: 20px;
+            }
+            #biodata:hover {
+                opacity: 0.5;
+            }
+            #gallery {
+                background-image: url("./images/gallerylogo.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                /* border: 1px solid black; */
+                margin-bottom: -40px;
+                padding-top: 3px;
+                padding-left: 25px;
+                padding-bottom: 20px;
+                padding-right: 25px;
+            }
+            #gallery:hover {
+                opacity: 0.5;
+            }
+            #first {
+                float: left;
+                display: inline;
+                font-weight: bolder;
+            }
+            #second {
+                float: right;
+                display: inline;
+            }
+            li {
+                display: inline;
+                list-style: none;
+                padding: 5px;
+            }
+            #sc {
+                background-image: url("./images/images (1)-02-01.jpeg");
+                background-size: contain;
+                background-repeat: no-repeat; 
+                margin-top: 50px;
+                display: inline;
+                /* border: 1px solid black; */
+                padding-top: 10px;
+                padding-left: 120px;
+                padding-bottom: 90px;
+                padding-right: 102px;
+            }
+            #applications {
+                /* border: 1px solid black; */
+                height: 300px;
+                width: 220px;
+                margin-top: -5px;
+                background-color:cadetblue;
+                padding-left: 5px;
+                float: right;
+            }
+            .a {
+                color: black;
+                font-weight: bold;
+            }
+            .a:hover {
+                color: honeydew;
+            }
+            #circle {
+                margin-left: 510px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+            #circle img {
+                border-radius: 20%;
+            }
+            #links {
+                display: inline;
+                margin-left: 550px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 35px;
+                padding-right: 30px;
+            }
+            #fb {
+                padding-right: 50px;
+                padding-left: 5px;
+                background-image: url("./images/fblogo.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-y: center;
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+            #fb:hover {
+                opacity: 0.6;
+            }
+            #insta {
+                margin-left: 40px;
+                margin-right: 5px;
+                padding-right: 20px;
+                padding-left: 30px;
+                padding-top: 14px;
+                padding-bottom: 14px;
+                background-image: url("./images/instalogo.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            #insta:hover {
+                opacity: 0.6;
+            }
+            #mail {
+                margin-left: 30px;
+                padding-left: 10px;
+                padding-right: 5px;
+                background-image: url("./images/maillogo2.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding-top: 16px;
+                padding-left: 50px;
+                padding-bottom: 16px;
+                padding-right: 10px;
+            }
+            #mail:hover {
+                opacity: 0.6;
+            }
+            body {
+                background-color: lightsteelblue;
+            }
+        </style>
     </head>
     <body>
-        <!-- <h1>S@hil Singh</h1> -->
-        <img src="./images/images (1)-02-01.jpeg" height="220" width="450"> <br>
-        <a href="./biodata.html">About</a> <br>
-        <a href="gallery.html">Gallery</a> <br>
-        <a href="https://www.facebook.com/profile.php?id=100011440730190" target="_blank">Check Me Out On Facebook</a>
-        <br>
-        <!-- <a href="mailto:sahilsingh14sept@gmail.com">E-mail Me</a> -->
-        <h3>My Applications:-</h3>
-        1.<a href="../calculator/index.html">Calculator</a>
+        <div id="top">
+            <div id="first">
+                <h2>S@hil</h2>
+            </div>
+            <div id="second">
+                <ul>
+                    <li>
+                        <a href="./biodata.html" id="biodata"></a>
+                    </li>
+                    <li>
+                        <a href="./gallery.html" id="gallery"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="sc">
+    
+        </div>
+        <div id="applications">
+           <div>
+               <h3>My Applications:-</h3>
+               <p>
+                   1.<a href="../calculator/index.html" class="a">Calculator</a>
+               </p> 
+           </div> 
+        </div>
+        <div id="circle">
+            <img src="./images/PSFix_20190820_102254.jpeg" height="300" width="380">
+        </div>
+        <div id="links">
+            <a href="" id="fb"></a>
+            <a href="" id="insta"></a>
+            <a href="" id="mail"></a>
+        </div>
     </body>
-</html>
