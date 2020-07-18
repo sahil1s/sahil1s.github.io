@@ -17,66 +17,105 @@
                 background-color: cadetblue;
                 margin-bottom: 20px;
             }
+            #first > ul > li {
+                float: left;
+                list-style: none;
+            }
+            #logo {
+                border: 1px solid black;
+                border-radius: 80px;
+                background-image: url("images/sahillogo2.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-left: -35px;
+                padding-top: 13px;
+                padding-right: 41.5px;
+                padding-bottom: 24px;
+                padding-left: 12px;
+                margin-right: 3px;
+            }
+            #logo:hover {
+                opacity: 0.8;
+            }
+            .partition {
+                border-left: 1px solid black;
+                height: 45px;
+                margin-left: 7px;
+                margin-top: -9px;
+                opacity: 0.3;
+            }
+            #sahil {
+                /* border: 1px solid black; */
+                margin-left: 8px;
+                margin-top: -10px;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            #second > ul > li {
+                float: right;
+                list-style: none;
+            }
             #biodata {
-                background-image: url("./images/biodataicon.png");
+                /* border: 1px solid black; */
+                background-image: url("images/biodataicon.png");
                 background-size: contain;
                 background-repeat: no-repeat;
-                /* border: 1px solid black; */
-                margin-right: -1px;
-                margin-top: 30px;
+                padding-left: 20px;
                 padding-top: 10px;
-                padding-bottom: 20px;
-                padding-left: 25px;
                 padding-right: 20px;
+                padding-bottom: 20px;
+                margin-right: 2px;
             }
             #biodata:hover {
-                opacity: 0.5;
+                opacity: 0.7;
+            }
+            #bio-li li {
+                display:none;
+            }
+            #bio-li:hover li {
+                display: block;
+            }
+            #bio-li > ul > li {
+                /* border: 1px solid black; */
+                border-radius: 5px;
+                margin-top: 24px;
+                margin-left: -55px;
+                text-align: center;
+                width: 55px;
+                background-color: #e0dee7;
+                opacity: 0.8;
             }
             #gallery {
-                background-image: url("./images/gallerylogo.png");
-                background-repeat: no-repeat;
-                background-size: contain;
                 /* border: 1px solid black; */
-                margin-bottom: -40px;
-                padding-top: 3px;
-                padding-left: 25px;
+                margin-right: 10px;
+                margin-left: 10px;
+                background-image: url("./images/gallerylogo.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding-left: 30px;
+                padding-top: 10px;
+                padding-right: 30px;
                 padding-bottom: 20px;
-                padding-right: 25px;
             }
             #gallery:hover {
-                opacity: 0.5;
+                opacity: 0.7;
             }
-            #first {
-                float: left;
-                display: inline;
-                font-weight: bolder;
-                font-size: 20px;
-                padding-left: 60px;
-                margin-top: -10px;
+            #galleryli li {
+                display: none;
             }
-            #second {
-                float: right;
-                display: inline;
+            #galleryli:hover li {
+                display: block;
             }
-            li {
-                display: inline;
-                list-style: none;
-                padding: 5px;
-            }
-            #sc {
-                border-radius: 50px;
-                height: 40px;
-                display: inline;
-                background-image: url("./images/sahillogo2.jpeg");
-                background-size: contain;
-                position: fixed;
-                height: 55px;
-                width: 55px;
-                left: 2px;
-                top: 3px;
-            }
-            #sc:hover {
-                opacity: 0.6;
+            #galleryli > ul > li {
+                /* border: 1px solid black; */
+                margin-top: 23px;
+                margin-left: -33px;
+                text-align: center;
+                border-radius: 20px;
+                width:60px;
+                background-color: #e0dee7;
+                opacity: 0.8; 
             }
             #applications {
                 /* border: 1px solid black; */
@@ -89,7 +128,6 @@
                 width: 200px;
                 padding-left: 10px;
                 background-color: cadetblue;
-                
             }
             .a {
                 color: black;
@@ -171,16 +209,34 @@
     <body>
         <div id="top">
             <div id="first">
-                <h2>S@hil</h2>
-                <a href="./index.html"  id="sc"></a>
+                <ul>
+                    <li>
+                        <a href="./index.html" id="logo"></a>
+                    </li>
+                    <li class="partition">
+                        <div></div>
+                    </li>
+                    <li id="sahil">
+                        S@hil
+                    </li>
+                </ul>
             </div>
             <div id="second">
                 <ul>
-                    <li>
-                        <a href="./biodata.html" id="biodata"></a>
-                    </li>
-                    <li>
+                    <li id="galleryli">
                         <a href="./gallery.html" id="gallery"></a>
+                        <ul>
+                            <li>Gallery</li>
+                        </ul>
+                    </li>
+                    <li class= "partition">
+                        <div></div>
+                    </li>
+                    <li id="bio-li">
+                        <a href="./biodata.html" id="biodata"></a>
+                        <ul>
+                            <li>Biodata</li>
+                        </ul>
                     </li>
                 </ul>
             </div>
